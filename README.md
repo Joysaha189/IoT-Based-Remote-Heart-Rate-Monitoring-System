@@ -68,7 +68,13 @@ If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:
 
 \- Emails these files to a physician for immediate analysis.
 
+#### Project Status
 
+
+
+✅ Completed — Baseline implementation
+
+🔧 Open for enhancements and upgrades
 
 #### **Contributors**
 
@@ -78,5 +84,8 @@ Farhan Hamid, Subah Karnine, Sadia Afrose, Shafim Bin Hassan, Joy Saha, Ishtiaqu
 
 Department of Electrical \& Electronic Engineering, Bangladesh University of Engineering and Technology (BUET)
 
+#### **License**
 
+
+This project is for academic and educational purposes.
 
