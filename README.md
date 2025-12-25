@@ -26,7 +26,7 @@ This project presents an effective health monitoring system designed to detect h
 
 #### **System Architecture**
 
-
+![workflow_diagram](Images/workflow.png)
 
 1\. \*\*Data Acquisition:\*\* The AD8232 ECG module collects physiological data from the body surface.  
 
@@ -59,7 +59,7 @@ This project presents an effective health monitoring system designed to detect h
 #### **Emergency Protocol**
 
 
-
+![results](Images/results.png)
 If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:  
 
 \- The system automatically acquires a longer (12-second) ECG signal.  
