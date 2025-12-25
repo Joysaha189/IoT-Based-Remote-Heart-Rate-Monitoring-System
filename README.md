@@ -60,6 +60,7 @@ This project presents an effective health monitoring system designed to detect h
 
 
 ![results](Images/outputs.png)
+
 If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:  
 
 \- The system automatically acquires a longer (12-second) ECG signal.  
