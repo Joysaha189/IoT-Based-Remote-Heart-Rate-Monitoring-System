@@ -81,7 +81,7 @@ If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:
 
 
 
-Farhan Hamid, Subah Karnine, Sadia Afrose, Shafim Bin Hassan, Joy Saha, Ishtiaque Ahmed, and Md Al Amin Patwary  
+Farhan Hamid, Subah Karnine, Sadia Afrose, Shafim Bin Hassan, **Joy Saha**, Ishtiaque Ahmed, and Md Al Amin Patwary  
 
 Department of Electrical \& Electronic Engineering, Bangladesh University of Engineering and Technology (BUET)
 
