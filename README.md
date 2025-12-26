@@ -4,7 +4,7 @@
 
 
 
-#### **Overview**
+###### **Overview**
 
 
 
@@ -12,7 +12,7 @@ This project presents an effective health monitoring system designed to detect h
 
 
 
-#### **Hardware Components**
+###### **Hardware Components**
 
 
 
@@ -24,7 +24,7 @@ This project presents an effective health monitoring system designed to detect h
 
 
 
-#### **System Architecture**
+###### **System Architecture**
 
 ![workflow_diagram](Images/workflow.png)
 
@@ -38,7 +38,7 @@ This project presents an effective health monitoring system designed to detect h
 
 
 
-#### **System Algorithm**
+###### **System Algorithm**
 
 
 
@@ -56,7 +56,7 @@ This project presents an effective health monitoring system designed to detect h
 
 
 
-#### **Emergency Protocol**
+###### **Emergency Protocol**
 
 
 ![results](Images/outputs.png)
@@ -77,7 +77,7 @@ If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:
 
 🔧 Open for enhancements and upgrades
 
-#### **Contributors**
+###### **Contributors**
 
 
 
@@ -85,7 +85,7 @@ Farhan Hamid, Subah Karnine, Sadia Afrose, Shafim Bin Hassan, Joy Saha, Ishtiaqu
 
 Department of Electrical \& Electronic Engineering, Bangladesh University of Engineering and Technology (BUET)
 
-#### **License**
+###### **License**
 
 
 This project is for academic and educational purposes.
