@@ -69,7 +69,7 @@ If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:
 
 \- Emails these files to a physician for immediate analysis.
 
-#### Project Status
+###### **Project Status**
 
 
 
