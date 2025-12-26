@@ -28,13 +28,13 @@ This project presents an effective health monitoring system designed to detect h
 
 ![workflow_diagram](Images/workflow.png)
 
-1\. \*\*Data Acquisition:\*\* The AD8232 ECG module collects physiological data from the body surface.  
+1\. **Data Acquisition:** The AD8232 ECG module collects physiological data from the body surface.  
 
-2\. \*\*Processing:\*\* A NodeMCU (ESP8266) collects data at a 100 samples/second sampling rate.  
+2\. **Processing:** A NodeMCU (ESP8266) collects data at a 100 samples/second sampling rate.  
 
-3\. \*\*BPM Calculation:\*\* Data is processed in Arduino IDE or MATLAB to identify R-peaks and calculate the mean R-R interval.  
+3\. **BPM Calculation:** Data is processed in Arduino IDE or MATLAB to identify R-peaks and calculate the mean R-R interval.  
 
-4\. \*\*Transmission:\*\* The processed heart rate is sent to ThingSpeak (IoT platform) and backed up via Gmail and Google Drive.
+4\. **Transmission:** The processed heart rate is sent to ThingSpeak (IoT platform) and backed up via Gmail and Google Drive.
 
 
 
