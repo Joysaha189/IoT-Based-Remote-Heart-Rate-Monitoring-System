@@ -1,92 +1,85 @@
-# IoT-Based-Remote-Heart-Rate-Monitoring-System
+# IoT-Based Remote Heart Rate Monitoring System
 
+## Overview
 
+This project presents an effective health monitoring system designed to support early detection of heart conditions using an **IoT-based ECG monitoring approach**. The system acquires ECG signals through a wearable sensing node, computes the heart rate, and transmits the processed data to the cloud via **Wi-Fi connectivity**.
 
+---
 
+## Hardware Components
 
-###### **Overview**
+- AD8232 ECG module  
+- ESP8266 (NodeMCU)  
+- Three disposable ECG electrode pads  
+- Breadboard  
+- Miscellaneous components (jumper wires, tape, etc.)
 
+---
 
-
-This project presents an effective health monitoring system designed to detect heart conditions early through an IoT-based ECG monitoring method. The system collects ECG data via a wearable node, calculates the heart rate, and transmits it to the cloud using Wi-Fi.
-
-
-
-###### **Hardware Components**
-
-
-
-* AD8232 ECG Module
-* ESP8266 (NodeMCU)
-* 3 Disposable ECG Electrode Pads
-* Breadboard
-* Miscellaneous (Wires, Tape, etc.)
-
-
-
-###### **System Architecture**
+## System Architecture
 
 ![workflow_diagram](Images/workflow.png)
 
-1\. **Data Acquisition:** The AD8232 ECG module collects physiological data from the body surface.  
+1. **Data Acquisition:**  
+   The AD8232 ECG module collects physiological ECG signals from the body surface.
 
-2\. **Processing:** A NodeMCU (ESP8266) collects data at a 100 samples/second sampling rate.  
+2. **Processing:**  
+   A NodeMCU (ESP8266) samples the ECG signal at **100 samples per second**.
 
-3\. **BPM Calculation:** Data is processed in Arduino IDE or MATLAB to identify R-peaks and calculate the mean R-R interval.  
+3. **BPM Calculation:**  
+   Data is processed using **Arduino IDE or MATLAB** to detect R-peaks and compute the mean R–R interval.
 
-4\. **Transmission:** The processed heart rate is sent to ThingSpeak (IoT platform) and backed up via Gmail and Google Drive.
+4. **Transmission:**  
+   The calculated heart rate is uploaded to **ThingSpeak** and backed up using **Gmail** and **Google Drive**.
 
+---
 
+## System Algorithm
 
-###### **System Algorithm**
+- Acquire ECG data for approximately **3 seconds** at 100 samples/second  
+- Detrend and normalize the signal to remove DC offset and baseline wander  
+- Detect local maxima to identify **R-peaks**  
+- Compute heart rate from the mean R–R interval  
+- Upload BPM data to ThingSpeak  
+- Repeat the process every **30 seconds**
 
+---
 
-
-\- Read data from AD8232 (~3 seconds at 100 samples/sec).  
-
-\- Detrend and normalize the signal (remove DC offset/baseline wander).  
-
-\- Find local maxima to identify R-peaks.  
-
-\- Calculate Heart Rate from the mean R-R interval.  
-
-\- Upload BPM to ThingSpeak.  
-
-\- Repeat every 30 seconds.
-
-
-
-###### **Emergency Protocol**
-
+## Emergency Protocol
 
 ![results](Images/outputs.png)
 
-If the calculated BPM is abnormal (<60 or >120) for five consecutive readings:  
+If the calculated heart rate is abnormal (**< 60 BPM or > 120 BPM**) for **five consecutive readings**:
 
-\- The system automatically acquires a longer (12-second) ECG signal.  
+- The system automatically records a longer **12-second ECG signal**  
+- Generates a **CSV file** and a **plot of the ECG waveform**  
+- Emails the data files to a physician for immediate review
 
-\- Generates a CSV file and a plot graph of the data.  
+---
 
-\- Emails these files to a physician for immediate analysis.
+## Project Status
 
-###### **Project Status**
+✅ **Completed** — Baseline implementation  
 
+🔧 **Open for enhancements and upgrades**
 
+---
 
-✅ Completed — Baseline implementation
+## Contributors
 
-🔧 Open for enhancements and upgrades
+- Farhan Hamid  
+- Subah Karnine  
+- Sadia Afrose  
+- Shafim Bin Hassan  
+- **Joy Saha**  
+- Ishtiaque Ahmed  
+- Md Al Amin Patwary  
 
-###### **Contributors**
+Department of Electrical & Electronic Engineering  
+Bangladesh University of Engineering and Technology (BUET)
 
+---
 
+## License
 
-Farhan Hamid, Subah Karnine, Sadia Afrose, Shafim Bin Hassan, **Joy Saha**, Ishtiaque Ahmed, and Md Al Amin Patwary  
-
-Department of Electrical \& Electronic Engineering, Bangladesh University of Engineering and Technology (BUET)
-
-###### **License**
-
-
-This project is for academic and educational purposes.
-
+This project is for **academic and educational purposes only**.
